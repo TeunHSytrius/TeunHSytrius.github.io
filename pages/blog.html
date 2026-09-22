@@ -1,9 +1,118 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Blog van Teun Hanssen over Software Engineering, webdevelopment en technologie."
+    />
+    <meta name="author" content="Teun Hanssen" />
+    <meta
+      name="keywords"
+      content="Teun Hanssen, Blog, Software Engineering, Webdevelopment"
+    />
+
+    <!-- CSS external link-->
+    <link rel="stylesheet" href="../style/main.css" />
+
+    <title>Blog | Teun Hanssen</title>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <!--Navbar-->
+      <nav class="site-nav">
+        <div class="container">
+          <!--Misschien logo van maken-->
+          <a href="../index.html" class="nav-brand">Teun Hanssen</a>
+
+          <ul class="navlist">
+            <li><a href="project.html">Project page</a></li>
+            <li><a href="blog.html">Blog page</a></li>
+            <li><a href="about.html">About me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blog-intro">
+        <h1>Blog</h1>
+
+        <p>
+          Op deze pagina schrijf ik over mijn ervaringen binnen Software
+          Engineering, projecten waar ik aan werk en onderwerpen die ik
+          interessant vind binnen softwareontwikkeling.
+        </p>
+      </section>
+
+      <section class="blog-list">
+        <h2>Blogposts</h2>
+
+        <article class="blog-item" id="blog1">
+          <header>
+            <h3>Mijn ontwikkeling als Software Engineer</h3>
+
+            <p>
+              <time datetime="2026-09-22">22 september 2026</time>
+            </p>
+          </header>
+
+          <p>
+            Tijdens mijn opleiding Software Engineering werk ik aan
+            verschillende onderdelen van softwareontwikkeling. Hierbij leer ik
+            niet alleen programmeren, maar ook hoe software wordt ontworpen,
+            getest en onderhouden.
+          </p>
+
+          <a href="#">Lees meer</a>
+        </article>
+
+        <article class="blog-item" id="blog2">
+          <header>
+            <h3>Waarom semantische HTML belangrijk is</h3>
+
+            <p>
+              <time datetime="2026-09-22">22 september 2026</time>
+            </p>
+          </header>
+
+          <p>
+            Semantische HTML zorgt ervoor dat een webpagina niet alleen visueel,
+            maar ook inhoudelijk een duidelijke structuur heeft. Elementen zoals
+            header, nav, main, section en article geven betekenis aan de inhoud
+            van een pagina.
+          </p>
+
+          <a href="#">Lees meer</a>
+        </article>
+
+        <article class="blog-item" id="blog3">
+          <header>
+            <h3>Mijn eerste stappen met databaseontwerp</h3>
+
+            <p>
+              <time datetime="2026-09-22">22 september 2026</time>
+            </p>
+          </header>
+
+          <p>
+            Bij databaseontwerp begint het werk niet direct met SQL. Eerst wordt
+            gekeken naar de informatie uit een casus en hoe deze kan worden
+            vertaald naar entiteiten, attributen en relaties.
+          </p>
+
+          <a href="#">Lees meer</a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Teun Hanssen. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
