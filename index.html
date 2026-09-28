@@ -12,6 +12,7 @@
 
     <!-- CSS external link-->
     <link rel="stylesheet" href="style/main.css" />
+    <script src="scripts/main.js"></script>
     <title>Portfolio Teun Hanssen</title>
   </head>
   <body>
@@ -76,9 +77,19 @@
       <section class="contact">
         <h2>Contact</h2>
         <p>
-          Neem contact met mij op via email:
+          Neem contact met mij op via email of het contactformulier hieronder.
+          Ik kijk ernaar uit om van u te horen! <br />Mail:
           <a href="mailto:teunhak2003@gmail.com">teunhak2003@gmail.com</a>
         </p>
+        <form action="" id="index-contactForm">
+          <label>Naam:</label>
+          <input type="text" name="name" />
+          <label>Email:</label>
+          <input type="email" name="email" />
+          <label>Bericht:</label>
+          <textarea name="message"></textarea>
+          <button type="submit">Verstuur</button>
+        </form>
       </section>
     </main>
     <footer>

@@ -480,6 +480,13 @@ a:hover {
   font-weight: bold;
 }
 
+.index-contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
 /*Links in tekst */
 
 p a {
