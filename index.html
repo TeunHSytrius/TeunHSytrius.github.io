@@ -12,6 +12,7 @@
 
     <!-- CSS external link-->
     <link rel="stylesheet" href="style/main.css" />
+    <script src="scripts/main.js"></script>
     <title>Portfolio Teun Hanssen</title>
   </head>
   <body>
@@ -25,23 +26,25 @@
             <li><a href="pages/project.html">Project page</a></li>
             <li><a href="pages/blog.html">Blog page</a></li>
             <li><a href="pages/about.html">About me</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="index-hero">
+      <section class="index-intro">
         <h1>Teun Hanssen</h1>
         <p>Student Software Engineering aan De Haagse Hogeschool.</p>
+        <figure class="index-photo">
+          <img src="../assets/img/mezelf.jpg" alt="Foto van Teun Hanssen" />
+        </figure>
       </section>
       <article class="index-about">
         <h2>Over mij</h2>
         <p>
           Hallo! Mijn naam is Teun Hanssen en ik ben een student Software
           Engineering aan De Haagse Hogeschool. Ik ben gepassioneerd over
-          technologie en het ontwikkelen van innovatieve oplossingen. Op deze
-          website deel ik mijn projecten, blogposts en meer informatie over mij.
+          technologie en het ontwikkelen van oplossingen. Op deze website deel
+          ik mijn projecten, blogposts en meer informatie over mij.
         </p>
       </article>
       <article class="index-projects">
@@ -51,16 +54,16 @@
           te leren over elk project.
         </p>
         <ul>
-          <li><a href="pages/project.html#project1">Project 1</a></li>
-          <li><a href="pages/project.html#project2">Project 2</a></li>
-          <li><a href="pages/project.html#project3">Project 3</a></li>
+          <li><a href="pages/project.html#project1">Portfolio website</a></li>
+          <li><a href="pages/project.html#project2">Formula 1 Dashboard</a></li>
+          <li><a href="pages/project.html#project3">Campus EventDesk</a></li>
         </ul>
       </article>
       <article class="skills">
         <h2>Skills</h2>
         <p>
           Ik heb ervaring met verschillende programmeertalen en technologieën,
-          waaronder Python, JavaScript, en Java. Ik ben ook bekend met
+          waaronder Python,JavaScript, en Java. Ik ben ook bekend met
           webontwikkeling en databasebeheer.
         </p>
         <div class="skill-list">
@@ -74,9 +77,19 @@
       <section class="contact">
         <h2>Contact</h2>
         <p>
-          Neem contact met mij op via email:
+          Neem contact met mij op via email of het contactformulier hieronder.
+          Ik kijk ernaar uit om van u te horen! <br />Mail:
           <a href="mailto:teunhak2003@gmail.com">teunhak2003@gmail.com</a>
         </p>
+        <form action="" id="index-contactForm">
+          <label>Naam:</label>
+          <input type="text" name="name" />
+          <label>Email:</label>
+          <input type="email" name="email" />
+          <label>Bericht:</label>
+          <textarea name="message"></textarea>
+          <button type="submit">Verstuur</button>
+        </form>
       </section>
     </main>
     <footer>
