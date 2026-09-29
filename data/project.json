@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "Voor dit project ontwikkel ik mijn eigen portfolio website. Op deze website presenteer ik mijn projecten, vaardigheden, blogposts en informatie over mijzelf.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "goal": "Het doel van dit project is om een semantische, toegankelijke en overzichtelijke portfolio website te ontwikkelen.",
+    "learned": "Tijdens dit project leer ik hoe ik HTML semantisch gebruik, een website logisch structureer en onderdelen vormgeef met CSS."
+  },
+  {
+    "id": 2,
+    "title": "Formula 1 Dashboard",
+    "description": "Een applicatie waarmee Formula 1-gegevens overzichtelijk kunnen worden weergegeven.",
+    "tags": ["React", "ASP.NET Core", "C#", "REST API"],
+    "goal": "Het doel van dit project is om data uit een externe Formula 1 API te verwerken en gebruiksvriendelijk te presenteren.",
+    "features": [
+      "Formula 1-seizoenen bekijken",
+      "Races per seizoen bekijken",
+      "Coureurs bekijken",
+      "Teams bekijken",
+      "Race-resultaten bekijken",
+      "Punten per race bekijken"
+    ],
+    "learned": "Tijdens dit project leer ik meer over API's, JSON-data en het opbouwen van een full-stack applicatie."
+  },
+
+  {
+    "id": 3,
+    "title": "Campus EventDesk",
+    "description": "Campus EventDesk is een casus waarbij een databasesysteem wordt ontworpen voor het beheren van onderwijsgerelateerde activiteiten en deelnemers.",
+    "tags": ["SQL", "MySQL", "UML", "Database Design"],
+    "goal": "Het doel is om vanuit een casus een correct conceptueel en logisch datamodel te ontwerpen en dit te vertalen naar een relationele database.",
+    "features": [
+      "Casusanalyse",
+      "UML-klassendiagram",
+      "Specialisaties",
+      "Associaties en multipliciteiten",
+      "Relationeel model",
+      "Database implementatie"
+    ],
+    "learned": "Tijdens dit project leer ik hoe ik bedrijfsregels omzet naar entiteiten, relaties, attributen en een relationeel databaseschema."
+  }
+]
