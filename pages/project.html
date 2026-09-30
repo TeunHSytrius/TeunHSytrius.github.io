@@ -46,8 +46,21 @@
         <h2>Mijn projecten</h2>
         <div class="project-controls">
           <div>
-            <h3>Filter op technologie</h3>
-            <div id="tag-filters" class="tag-filters"></div>
+            <label for="tag-filter">Filter op technologie</label>
+            <select id="tag-filter">
+              <option value="alle">Alle technologieën</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="React">React</option>
+              <option value="ASP.NET Core">ASP.NET Core</option>
+              <option value="C#">C#</option>
+              <option value="REST API">REST API</option>
+              <option value="SQL">SQL</option>
+              <option value="MySQL">MySQL</option>
+              <option value="UML">UML</option>
+              <option value="Database Design">Database Design</option>
+            </select>
           </div>
           <div>
             <label for="project-sort">Sorteren</label>
@@ -61,7 +74,6 @@
         </div>
         <p id="project-count" aria-live="polite">Projecten laden...</p>
         <div id="project-container"></div>
-        <p id="no-projects" hidden>Geen projecten gevonden met deze filters.</p>
       </section>
     </main>
     <footer>

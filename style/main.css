@@ -338,6 +338,59 @@ p a:hover {
   margin-bottom: 5px;
 }
 
+.project-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 20px 30px;
+  margin-bottom: 25px;
+  padding: 25px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+}
+
+.project-controls label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.project-controls select,
+.project-controls button {
+  min-height: 42px;
+  padding: 8px 14px;
+  background-color: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.project-controls select:hover {
+  border-color: var(--yellow);
+}
+
+.project-controls button {
+  border-color: var(--red);
+}
+
+.project-controls button:hover {
+  background-color: var(--red);
+  color: var(--bg);
+}
+
+.project-controls select:focus-visible,
+.project-controls button:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+#project-count {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
 /* Blog */
 
 .blog-list {
@@ -520,6 +573,17 @@ a:focus-visible {
   }
   .project-item h3 {
     font-size: 1.35rem;
+  }
+
+  .project-controls {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .project-controls select,
+  .project-controls button {
+    width: 100%;
   }
 
   .index-about,
