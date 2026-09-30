@@ -63,8 +63,8 @@
         <h2>Skills</h2>
         <p>
           Ik heb ervaring met verschillende programmeertalen en technologieën,
-          waaronder Python,JavaScript, en Java. Ik ben ook bekend met
-          webontwikkeling en databasebeheer.
+          waaronder JavaScript, en Java. Ik ben ook bekend met webontwikkeling
+          en databasebeheer.
         </p>
         <div class="skill-list">
           <span>HTML</span>
@@ -75,23 +75,54 @@
         </div>
       </article>
       <section class="contact">
-        <h2>Contact</h2>
-        <p>
-          Neem contact met mij op via email of het contactformulier hieronder.
-          Ik kijk ernaar uit om van u te horen! <br />Mail:
-          <a href="mailto:teunhak2003@gmail.com">teunhak2003@gmail.com</a>
-        </p>
-        <aside class="contactForm">
-          <form action="" id="index-contactForm">
-            <label>Naam:</label>
-            <input type="text" name="name" required />
-            <label>Email:</label>
-            <input type="email" name="email" required />
-            <label>Bericht:</label>
-            <textarea name="message" required></textarea>
-            <button type="submit" id="contantBtn">Verstuur</button>
-          </form>
-        </aside>
+         <h2>Contact</h2>
+          <div class="contact-inhoud">
+          <div class="contact-tekst">
+         <p>Neem contact met mij op via e-mail of het contactformulier. Ik kijk ernaar uit om van u te horen!</p>
+      <address>
+        Mail: <a href="mailto:teunhak2003@gmail.com">teunhak2003@gmail.com</a>
+      </address>
+    </div>
+        <form id="index-contactForm">
+          <p>Alle velden zijn verplicht</p>
+          <div class="form-veld">
+            <label for="naam">Naam:</label>
+            <input
+              type="text"
+              id="formNaam"
+              name="formNaam"
+              autocomplete="name"
+              required
+              aria-describedby="naam-fout"
+            />
+            <p id="naam-fout"></p>
+          </div>
+          <div class="form-veld">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="formEmail"
+              name="formEmail"
+              autocomplete="email"
+              required
+              aria-describedby="email-fout"
+            />
+            <p id="email-fout"></p>
+          </div>
+          <div class="form-veld">
+            <label for="naam">Bericht (Minimaal 5 tekens)</label>
+            <textarea
+              id="Formbericht"
+              name="bericht"
+              rows="5"
+              required
+              aria-describedby="bericht-fout"
+            ></textarea>
+            <p id="bericht-fout" class="form-fout"></p>
+          </div>
+          <button type="submit" id="btnSubmitForm">Verstuur</button>
+          <p id="form-bevestiging" role="status"></p>
+        </form>
       </section>
     </main>
     <footer>
