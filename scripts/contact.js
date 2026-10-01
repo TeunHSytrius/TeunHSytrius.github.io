@@ -69,7 +69,7 @@ const verstuurForm = (event) => {
   bevestiging.textContent = "";
 
   if (controlForm()) {
-    bevestiging.textContent = `Bedankt ${formNaam.value.trim()}! Je bericht is verstuurd.`;
+    bevestiging.textContent = `Bedankt ${formNaam.value.trim()}! Het formulier is goed ingevuld. Verzenden is nog niet beschikbaar.`;
     form.reset();
   }
 };
