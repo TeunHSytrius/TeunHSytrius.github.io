@@ -94,7 +94,7 @@ const resetFilters = () => {
   updatePagina();
 };
 
-const start = async () => {
+const startProject = async () => {
   try {
     alleProjecten = await laadProjecten();
     updatePagina();
@@ -108,4 +108,4 @@ const start = async () => {
   }
 };
 
-start();
+startProject();

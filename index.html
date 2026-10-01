@@ -12,7 +12,7 @@
 
     <!-- CSS external link-->
     <link rel="stylesheet" href="style/main.css" />
-    <script src="scripts/contact.js" defer></script>
+    <script src="scripts/contact.js" defer></script> <!--Contact javascript file-->
     <title>Portfolio Teun Hanssen</title>
   </head>
   <body>
@@ -83,45 +83,45 @@
         Mail: <a href="mailto:teunhak2003@gmail.com">teunhak2003@gmail.com</a>
       </address>
     </div>
-        <form id="index-contactForm">
+        <form id="index-contactForm" novalidate>
           <p>Alle velden zijn verplicht</p>
           <div class="form-veld">
-            <label for="naam">Naam:</label>
+            <label for="formNaam">Naam:</label>
             <input
               type="text"
               id="formNaam"
               name="formNaam"
               autocomplete="name"
               required
-              aria-describedby="naam-fout"
+              aria-describedby="formNaam-fout"
             />
-            <p id="naam-fout"></p>
+            <p id="formNaam-fout" class="form-fout"></p>
           </div>
           <div class="form-veld">
-            <label for="email">Email:</label>
+            <label for="formEmail">Email:</label>
             <input
               type="email"
               id="formEmail"
               name="formEmail"
               autocomplete="email"
               required
-              aria-describedby="email-fout"
+              aria-describedby="formEmail-fout"
             />
-            <p id="email-fout"></p>
+            <p id="formEmail-fout" class="form-fout"></p>
           </div>
           <div class="form-veld">
-            <label for="naam">Bericht (Minimaal 5 tekens)</label>
+            <label for="formBericht">Bericht (Minimaal 5 tekens)</label>
             <textarea
-              id="Formbericht"
+              id="formBericht"
               name="bericht"
               rows="5"
               required
-              aria-describedby="bericht-fout"
+              aria-describedby="formBericht-fout"
             ></textarea>
-            <p id="bericht-fout" class="form-fout"></p>
+            <p id="formBericht-fout" class="form-fout"></p>
           </div>
           <button type="submit" id="btnSubmitForm">Verstuur</button>
-          <p id="form-bevestiging" role="status"></p>
+          <p id="form-bevestiging" class="form-bevestiging" role="status"></p>
         </form>
       </section>
     </main>

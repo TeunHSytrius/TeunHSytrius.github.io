@@ -14,6 +14,9 @@
     />
     <!-- CSS external link-->
     <link rel="stylesheet" href="../style/main.css" />
+
+    <script src="../scripts/api.js" defer></script>
+    <!--API Javascript file-->
     <title>Blog | Teun Hanssen</title>
   </head>
   <body>
@@ -87,6 +90,11 @@
           <a href="#">Lees meer</a>
         </article>
       </section>
+      <aside class="weer">
+        <h2>Het weer</h2>
+        <p id="weer-status" aria-live="polite">Weer laden...</p>
+        <div id="weer-inhoud"></div>
+      </aside>
     </main>
     <footer>
       <div class="footer-container">

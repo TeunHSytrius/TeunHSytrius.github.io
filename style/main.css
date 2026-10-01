@@ -357,6 +357,14 @@ p a:hover {
   flex: 1;
 }
 
+.weer {
+  max-width: 850px;
+  margin-bottom: 55px;
+  padding: 25px 30px;
+  background-color: var(--bg-light);
+  border-left: 4px solid var(--red);
+}
+
 /* Contact */
 
 .contact {

@@ -21,7 +21,7 @@ const controlEmail = (email) => {
     return "Vul je e-mail in alsjeblieft.";
   }
   if (!emailPatroon.test(email.trim())) {
-    return "vul een geldig e-mail in, bijvoorbeeld naam@voorbeeld.nl";
+    return "Vul een geldig e-mail in, bijvoorbeeld naam@voorbeeld.nl";
   }
   return "";
 };
@@ -60,6 +60,8 @@ const controlForm = () => {
   } else if (berichtError !== "") {
     formBericht.focus();
   }
+
+  return naamError === "" && emailError === "" && berichtError === "";
 };
 
 const verstuurForm = (event) => {
