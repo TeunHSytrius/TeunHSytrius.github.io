@@ -53,5 +53,23 @@ const controlForm = () => {
   errorMessage(formEmail, emailError);
   errorMessage(formBericht, berichtError);
 
-  if (naamError !== "") formNaam.focus();
+  if (naamError !== "") {
+    formNaam.focus();
+  } else if (emailError !== "") {
+    formEmail.focus();
+  } else if (berichtError !== "") {
+    formBericht.focus();
+  }
 };
+
+const verstuurForm = (event) => {
+  event.preventDefault();
+  bevestiging.textContent = "";
+
+  if (controlForm()) {
+    bevestiging.textContent = `Bedankt ${formNaam.value.trim()}! Je bericht is verstuurd.`;
+    form.reset();
+  }
+};
+
+form.addEventListener("submit", verstuurForm);
