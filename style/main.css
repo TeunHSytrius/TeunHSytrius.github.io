@@ -364,6 +364,9 @@ p a:hover {
   background-color: var(--bg-light);
   border-left: 4px solid var(--red);
 }
+.weer-fout {
+  color: var(--red);
+}
 
 /* Contact */
 
